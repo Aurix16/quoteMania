@@ -1,0 +1,51 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.nav-item, .navbar-brand{
+    cursor: pointer;
+}
+.navItem{
+    color: #ffffff !important;
+}
+
+.navItem:hover{
+  color:  #222299 !important;
+}
+
+.footer-icon:hover{
+    color: #222299;
+}
+
+.btn-custom{
+    background-color: #0000A8 !important;
+    color:#ffffff !important;
+}
+
+.btn-custom:hover{
+    background-color: #222299 !important;
+}
+
+/* Full width for class Section*/
+.section{
+  height:100vh;
+  }
+
+  /* Slider */
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .carousel-indicators .active{
+    background-color:   #0000A8 !important;
+  }
