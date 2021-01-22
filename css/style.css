@@ -83,7 +83,7 @@ a:hover{
     font-size: 0;
     text-transform: uppercase;
     letter-spacing: 0;
-    animation: slide 40s step-start infinite;
+    animation: slide 30s step-start infinite;
   }
   
   .typing-slider p::after {
