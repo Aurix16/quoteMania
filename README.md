@@ -14,4 +14,4 @@ It' a work in progress. By the time you read this, not everything might have bee
 Cheers ✌
 
 Shout Out
-Slider - modified based on <a src="https://codepen.io/alewinski/pen/grqgqx">Adam Liwinski's </a> idea
+Slider - modified based on <a src="https://codepen.io/alewinski/pen/grqgqx">Adam Liwinski's</a> idea
