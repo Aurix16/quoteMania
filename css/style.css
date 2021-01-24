@@ -61,7 +61,7 @@ a:hover{
     }
   }
   @keyframes slide {
-    33.3333333333% {
+  25%{/* 33.3333333333% { */
       font-size: 1rem;
       letter-spacing: 3px;
     }
@@ -83,7 +83,7 @@ a:hover{
     font-size: 0;
     text-transform: uppercase;
     letter-spacing: 0;
-    animation: slide 30s step-start infinite;
+    animation: slide 40s step-start infinite;
   }
   
   .typing-slider p::after {
@@ -93,8 +93,8 @@ a:hover{
     right: 0;
     bottom: 0;
     border-left: 3px solid black;
-    background-color: #ffcc80;
-    animation: typing 10s infinite, cursor 0.5s infinite;
+    background-color: #ffcc00;
+    animation: typing 10s infinite, cursor 1s infinite;
   }
   
   .typing-slider p:nth-child(1) {
