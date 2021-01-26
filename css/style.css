@@ -61,7 +61,7 @@ a:hover{
     }
   }
   @keyframes slide {
-  25%{/* 33.3333333333% { */
+    25%{
       font-size: 1rem;
       letter-spacing: 3px;
     }
@@ -93,7 +93,7 @@ a:hover{
     right: 0;
     bottom: 0;
     border-left: 3px solid black;
-    background-color: #ffcc00;
+    background-color: #ffffff;
     animation: typing 10s infinite, cursor 1s infinite;
   }
   
