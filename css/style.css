@@ -10,7 +10,7 @@ a:hover{
     cursor: pointer;
 }
 .navItem{
-    color: #ffffcc !important;
+    color: #ffffff !important;
 }
 
 .navItem:hover{
@@ -61,7 +61,7 @@ a:hover{
     }
   }
   @keyframes slide {
-    25%{
+    20%{
       font-size: 1rem;
       letter-spacing: 3px;
     }
@@ -83,7 +83,7 @@ a:hover{
     font-size: 0;
     text-transform: uppercase;
     letter-spacing: 0;
-    animation: slide 40s step-start infinite;
+    animation: slide 50s step-start infinite;
   }
   
   .typing-slider p::after {
@@ -127,4 +127,12 @@ a:hover{
   .typing-slider p:nth-child(4)::after {
     animation-delay: 30s;
     animation-timing-function: steps(63), step-end;
+  }
+
+  .typing-slider p:nth-child(5) {
+    animation-delay: 40s;
+  }
+  .typing-slider p:nth-child(5)::after {
+    animation-delay: 40s;
+    animation-timing-function: steps(83), step-end;
   }
