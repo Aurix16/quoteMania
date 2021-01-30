@@ -24,10 +24,31 @@
         </button>
         <div class="collapse navbar-collapse float-right" id="navbarTogglerDemo01">
             <ul class="navbar-nav ml-auto">
-                <button type="button" class="btn btn-custom mb-2 mr-2 py-lg-2 px-lg-4 float-right" >Subscribe Now</button>
+                <button type="button" class="btn btn-custom mb-2 mr-2 py-lg-2 px-lg-4 float-right" data-toggle="modal" data-target="#exampleModalCentered" >Subscribe Now</button>
             </ul>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+            ...
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <!-- Full Page Slider-->
     <section id="home" class="section">
