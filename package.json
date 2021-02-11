@@ -1,0 +1,23 @@
+{
+  "name": "quoteMania",
+  "version": "1.0.0",
+  "description": "Get your morning dose of motivation from some of the most accomplished people of our time and times past.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aurix16/quoteMania.git"
+  },
+  "keywords": [],
+  "author": "Aurora Cherie <dawn.idoko@gmail.com> (https://github.com/Aurix16)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Aurix16/quoteMania/issues"
+  },
+  "homepage": "https://github.com/Aurix16/quoteMania#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
