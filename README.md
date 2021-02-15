@@ -1,4 +1,4 @@
-# QuoteMania
+# Quotes
 
 Get your morning dose of motivation from some of the most accomplished people of our time and times past.
 

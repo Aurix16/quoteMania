@@ -40,7 +40,12 @@
             </button>
             </div>
             <div class="modal-body" style="width:100%;">
-                <input type ="email" placeholder="someone@something.com" class="pl-5 pr-5" width="200"/>
+                <div class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-sm">Email</span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="someone@something.com" class="pl-5 pr-5" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                  </div>
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
