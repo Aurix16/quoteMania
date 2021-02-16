@@ -11,6 +11,9 @@ Perks
 
 It' a work in progress. By the time you read this, not everything might have been implemented. Feel free to contribute if you want to. Or subscribe.
 
+- Just sign up an receive a quote daily
+- Chron job for sending out quotes
+
 Cheers ✌
 
 Shout Out
