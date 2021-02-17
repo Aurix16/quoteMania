@@ -18,3 +18,4 @@ Cheers ✌
 
 Shout Out
 Slider - modified based on <a src="https://codepen.io/alewinski/pen/grqgqx">Adam Liwinski's</a> idea
+Quotes - gotten from <a src="https://gist.github.com/shreyasminocha/7d5dedafc1fe158f82563c1223855177">Shreya Minocha's</a> github
