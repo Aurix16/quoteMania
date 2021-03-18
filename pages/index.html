@@ -31,27 +31,30 @@
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalCenteredLabel">What's Your Email Address?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body" style="width:100%;">
-                <div class="input-group input-group-sm">
-                    <input type="email" class="form-control" placeholder="someone@somewhere.com" class="pl-5 pr-5" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-                  <div class="input-group input-group-sm">
-                    <input type="email" class="form-control" placeholder="confirm email address" class="pl-5 pr-5" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
-                  </div>
-            </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Register</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
-            </div>
-        </div>
+        <div class="modal-dialog"  role="document">
+            <form>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenteredLabel">What's Your Email Address?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" style="width:100%;">
+                        <div class="form-group">
+                            <input type="email" class="form-control " placeholder="Enter your email address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Confirm email address entered above"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <small class="form-text text-center text-muted">We'll never share your info.</small> <!--applies small underlining text-->
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
