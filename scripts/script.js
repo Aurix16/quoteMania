@@ -5,6 +5,11 @@ function thunderEffect(){
         val1= $.trim($("input[name='email']").val());
         val2 = $.trim($("input[name='confirm_email']").val());
 
+        if (val1 === val2){
+            console.log("same");
+        }else{
+            console.log("different");
+        }
         console.log(val1 +""+ val2);
     // $(".ext-1").fadeIn(1500).fadeOut(250, function(){
 
