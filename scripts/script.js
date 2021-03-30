@@ -7,6 +7,7 @@ function thunderEffect(){
 
         if (val1 === val2){
             console.log("same");
+            document.getElementsByClassName("badge").style.visibility = "visible";
         }else{
             console.log("different");
         }
