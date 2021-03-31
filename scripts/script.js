@@ -7,21 +7,10 @@ function thunderEffect(){
 
         if (val1 === val2){
             console.log("same");
-            document.getElementsByClassName("badge").style.visibility = "visible";
+            document.getElementById("err_msg").style.visibility = "visible";
         }else{
             console.log("different");
         }
-        console.log(val1 +""+ val2);
-    // $(".ext-1").fadeIn(1500).fadeOut(250, function(){
-
-    //     $(this).css("background-color", "rgba(255, 255, 255, .7)");
-
-    //     document.getElementById("au001").play();
-
-    //     $(this).fadeIn(250).fadeOut(2000, function(){
-
-    //         $(this).css("background-color", "rgba(0, 0, 0, .4)");                    
-    //     });                
-    // });                 
+        console.log(val1 +""+ val2);             
 }
 
