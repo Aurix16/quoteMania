@@ -7,9 +7,12 @@ function thunderEffect(){
 
         if (val1 === val2){
             console.log("same");
-            document.getElementById("err_msg").style.visibility = "visible";
+            document.getElementById("msg").style.visibility = "visible";
+            document.getElementById("msg").innerHTML = "Welcome, You're now on the list";
         }else{
             console.log("different");
+            document.getElementById("msg").style.visibility = "visible";
+            document.getElementById("msg").innerHTML = "The email addresses aren't the same";
         }
         console.log(val1 +""+ val2);             
 }
