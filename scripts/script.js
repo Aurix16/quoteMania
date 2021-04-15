@@ -12,7 +12,7 @@ function thunderEffect(){
         }else{
             console.log("different");
             document.getElementById("msg").style.visibility = "visible";
-            document.getElementById("msg").innerHTML = "Please Check both Email Addresses";
+            document.getElementById("msg").innerHTML = "Email Addresses Mismatch, Please check";
         }
         console.log(val1 +""+ val2);             
 }
