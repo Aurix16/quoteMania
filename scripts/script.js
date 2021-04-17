@@ -1,6 +1,6 @@
 // document.getElementById("submitBtn").onclick(thunderEffect());
 
-function thunderEffect(){
+function validateEmail(){
     // Check if email addresses are the same
         val1= $.trim($("input[name='email']").val());
         val2 = $.trim($("input[name='confirm_email']").val());
