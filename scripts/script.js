@@ -12,7 +12,7 @@ function validateEmail(){
         }else{
             console.log("different");
             document.getElementById("msg").style.visibility = "visible";
-            document.getElementById("msg").innerHTML = "Email Addresses Mismatch, Please check";
+            document.getElementById("msg").innerHTML = "There's an Email Addresses Mismatch, Please check";
         }
         console.log(val1 +""+ val2);             
 }
