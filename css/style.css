@@ -136,3 +136,14 @@ a:hover{
     animation-delay: 40s;
     animation-timing-function: steps(83), step-end;
   }
+
+
+/* Error Badge */
+.err_badge{
+  width: 40px;
+  height: 0.5em;
+  color:#ffffff;
+  background-color: #222299;
+  border-radius: 2px;
+  padding:4px;
+}

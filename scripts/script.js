@@ -8,11 +8,11 @@ function validateEmail(){
         if (val1 === val2){
             console.log("same");
             document.getElementById("msg").style.visibility = "visible";
-            document.getElementById("msg").innerHTML = "Welcome, You're now on the list";
+            document.getElementById("msg").innerHTML = "Your wish is our command, You're now on the list";
         }else{
             console.log("different");
             document.getElementById("msg").style.visibility = "visible";
-            document.getElementById("msg").innerHTML = "There's an Email Addresses Mismatch, Please check";
+            document.getElementById("msg").innerHTML = "Ooops, the email addresses don't match";
         }
         console.log(val1 +""+ val2);             
 }

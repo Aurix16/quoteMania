@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote</title>
+    <title>Quotes</title>
 
     
     <link rel="stylesheet" href="../bootstrap-4.5.2-dist/css/bootstrap.min.css">
@@ -42,15 +42,15 @@
                     </div>
                     <div class="modal-body" style="width:100%;">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control " placeholder="Enter email address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <input type="email" name="email" class="form-control " placeholder="Enter Email Address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="confirm_email" class="form-control" placeholder="Confirm email address entered above"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
-                            <span id="msg" class="badge badge-warning" style="visibility:hidden"></span>
+                            <input type="email" name="confirm_email" class="form-control" placeholder="Confirm Email Address"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <span id="msg" class="err_badge" style="visibility:hidden;">....</span>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" id = "submitBtn" onclick="validateEmail()" class="btn btn-primary">Sign Me Up</button>
+                        <button type="submit" id = "submitBtn" onclick="validateEmail()" class="btn btn-custom">Sign Me Up</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
                     </div>
                 </div>
