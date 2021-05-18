@@ -46,11 +46,13 @@
                         </div>
                         <div class="form-group">
                             <input type="email" name="confirm_email" class="form-control" required placeholder="Confirm Email Address"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
-                            <span id="msg" class="err_badge" style="visibility:hidden;"></span>
+                        </div>
+                        <div class="form-group">
+                            <span id="msg" class="err_badge" style="visibility:hidden;" ></span>
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="submit" id = "submitBtn" onclick="validateEmail()" class="btn btn-custom">Sign Me Up</button>
+                        <button type="submit" id = "submitBtn" onclick="validateEmail()" class="btn btn-custom" aria-disabled="true" disabled>Sign Me Up</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Dismiss</button>
                     </div>
                 </div>
