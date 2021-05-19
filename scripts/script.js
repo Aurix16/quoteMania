@@ -8,6 +8,7 @@ function validateEmail(){
     }
 
     //Trigger after mouse leaves focus?
+    document.getElementById('submitBtn').disabled = false;
 
     //Check if a wrong email address format is entered
 
