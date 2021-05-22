@@ -3,12 +3,12 @@
 function validateEmail(){
 
     //Check if email addresses box are null
-    if (val1!= null && val2!=null){
-        document.getElementById('submitBtn').disabled = true;
-    }
+    // if (val1!= null && val2!=null){
+    //     document.getElementById('submitBtn').disabled = true;
+    // }
 
     //Trigger after mouse leaves focus?
-    document.getElementById('submitBtn').disabled = false;
+    //document.getElementById('submitBtn').disabled = false;
 
     //Check if a wrong email address format is entered
 
