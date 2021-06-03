@@ -42,10 +42,10 @@
                     </div>
                     <div class="modal-body" style="width:100%;">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" required placeholder="Enter Email Address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <input type="email" name="email" class="form-control" minlength=1 required placeholder="Enter Email Address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="confirm_email" class="form-control" required placeholder="Confirm Email Address"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <input type="email" name="confirm_email" class="form-control" minlength=1 required placeholder="Confirm Email Address"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
                         </div>
                         <div class="form-group">
                             <span id="msg" class="err_badge" style="visibility:hidden;" ></span>
@@ -87,17 +87,18 @@
     
     <script>
         $('form').validate();
-      </script>
+    </script>
       
       <script>
         $('#password, #passwordConfirm').on('keyup', function() {
-          if ($('#password').val() == $('#passwordConfirm').val()) {
-            $('#message').html('Matching').css('color', 'green');
-            $('submit').prop('disabled', false);
-          } else
-            $('#message').html('Not Matching').css('color', 'red');
-          $('submit').prop('disabled', true);
-        });
+            if ($('#password').val() == $('#passwordConfirm').val()) {
+                $('#message').html('Matching').css('color', 'green');
+                $('#submit').prop('disabled', false);
+            } else {
+                $('#message').html('Not Matching').css('color', 'red');
+                $('#submit').prop('disabled', true);
+            }
+            });
       </script>
 
 
