@@ -32,7 +32,7 @@
     <!-- Modal -->
     <div class="modal fade" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
         <div class="modal-dialog"  role="document">
-            <form>
+            <form method="POST" action="/pages/index.html">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalCenteredLabel">What's Your Email Address?</h5>
@@ -42,10 +42,10 @@
                     </div>
                     <div class="modal-body" style="width:100%;">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" minlength=1 required placeholder="Enter Email Address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <input type="email" id="email" name="email" class="form-control" minlength=1 required placeholder="Enter Email Address" aria-label="large" aria-describedby="inputGroup-sizing-lg">
                         </div>
                         <div class="form-group">
-                            <input type="email" name="confirm_email" class="form-control" minlength=1 required placeholder="Confirm Email Address"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
+                            <input type="email" id="confirm_email" name="confirm_email" class="form-control" minlength=1 required placeholder="Confirm Email Address"  aria-label="large" aria-describedby="inputGroup-sizing-lg">
                         </div>
                         <div class="form-group">
                             <span id="msg" class="err_badge" style="visibility:hidden;" ></span>
@@ -84,22 +84,6 @@
             <a href="https://github.com/Aurix16">Aurora Cherie </a>
         </footer>
     </div>
-    
-    <script>
-        $('form').validate();
-    </script>
-      
-      <script>
-        $('#password, #passwordConfirm').on('keyup', function() {
-            if ($('#password').val() == $('#passwordConfirm').val()) {
-                $('#message').html('Matching').css('color', 'green');
-                $('#submit').prop('disabled', false);
-            } else {
-                $('#message').html('Not Matching').css('color', 'red');
-                $('#submit').prop('disabled', true);
-            }
-            });
-      </script>
 
 
     
@@ -108,5 +92,25 @@
     <script src="../bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="../scripts/script.js"></script>
+
+    <!-- <script>
+        $('form').validate();
+    </script> -->
+      
+
+    <!--In line script to ensure email addresses are the same.-->
+      <script>
+        $('#email, #confirm_email').on('keyup', function() {
+            if ($('#email').val() == $('#confirm_email').val()) {
+                // $('#msg').html('Matching').css('color', 'green');
+                $('#submitBtn').prop('disabled', false);
+            } else {
+                // $('#msg').html('Not Matching').css('color', 'red');
+                $('#submitBtn').prop('disabled', true);
+            }
+            });
+      </script>
+
+
 </body>
 </html>
