@@ -26,10 +26,10 @@ async function main(){
       await  listDatabases(client);
 
       // Store into DB
-      app.post('/pages/index.html', function (req, res) {
+      app.post('/pages/', function (req, res) {
         dbConn.then(function(db) {
             delete req.body._id; // for safety reasons
-            console.log(req.body)
+            console.log(req.email)
             db.collection('quotesMania.quotesUsers').insertOne(req.body);
         });    
         res.send('Data received:\n' + JSON.stringify(req.body));
