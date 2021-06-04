@@ -26,7 +26,7 @@ async function main(){
       await  listDatabases(client);
 
       // Store into DB
-      app.post('/pages/', function (req, res) {
+      app.get('/pages/', function (req, res) {
         dbConn.then(function(db) {
             delete req.body._id; // for safety reasons
             console.log(req.email)
@@ -55,5 +55,5 @@ async function listDatabases(client){
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 
-app.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0' );
+app.listen(process.env.PORT || 5500, process.env.IP || '127.0.0.1' );
 
