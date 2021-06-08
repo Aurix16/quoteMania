@@ -27,9 +27,10 @@ async function main(){
 
       // Store into DB
       app.get('/pages/', function (req, res) {
+        console.log("Here")
         dbConn.then(function(db) {
             delete req.body._id; // for safety reasons
-            console.log(req.email)
+            console.log(req.body.email)
             db.collection('quotesMania.quotesUsers').insertOne(req.body);
         });    
         res.send('Data received:\n' + JSON.stringify(req.body));
