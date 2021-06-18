@@ -27,7 +27,7 @@ async function main(){
 
       // Store into DB
       app.get('/pages/', function (req, res) {
-        console.log("Here")
+        console.log(req.body)
         dbConn.then(function(db) {
             delete req.body._id; // for safety reasons
             console.log(req.body.email)
