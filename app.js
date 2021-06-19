@@ -27,6 +27,7 @@ async function main(){
 
       // Store into DB
       app.get('/pages/', function (req, res) {
+        // I don't think this function is running
         console.log(req.body)
         dbConn.then(function(db) {
             delete req.body._id; // for safety reasons
