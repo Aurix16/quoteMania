@@ -17,31 +17,31 @@ async function main(){
   console.log(`${process.env.DB_USER}`)
   const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
-  // try {
-  //     // Connect to the MongoDB cluster
-  //     dbConn = client.connect(); 
-  //     await client.connect();
+  try {
+      // Connect to the MongoDB cluster
+      dbConn = client.connect(); 
+      await client.connect();
 
-  //     // Make the appropriate DB calls
-  //     await  listDatabases(client);
+      // Make the appropriate DB calls
+      await  listDatabases(client);
 
-  //     // Store into DB
-  //     app.get('/pages/', function (req, res) {
-  //       // I don't think this function is running; It isn't
-  //       console.log(req.body)
-  //       dbConn.then(function(db) {
-  //           delete req.body._id; // for safety reasons
-  //           console.log(req.body.email)
-  //           db.collection('quotesMania.quotesUsers').insertOne(req.body);
-  //       });    
-  //       res.send('Data received:\n' + JSON.stringify(req.body));
-  //   });
+    //   // Store into DB
+    //   app.get('/pages/', function (req, res) {
+    //     // I don't think this function is running; It isn't
+    //     console.log(req.body)
+    //     dbConn.then(function(db) {
+    //         delete req.body._id; // for safety reasons
+    //         console.log(req.body.email)
+    //         db.collection('quotesMania.quotesUsers').insertOne(req.body);
+    //     });    
+    //     res.send('Data received:\n' + JSON.stringify(req.body));
+    // });
 
-  // } catch (e) {
-  //     console.error(e);
-  // } finally {
-  //     await client.close();
-  // }
+  } catch (e) {
+      console.error(e);
+  } finally {
+      await client.close();
+  }
 }
 
 main().catch(console.error);
