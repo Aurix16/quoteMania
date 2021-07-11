@@ -25,17 +25,17 @@ async function main(){
       // Make the appropriate DB calls
       await  listDatabases(client);
 
-    //   // Store into DB
-    //   app.get('/pages/', function (req, res) {
-    //     // I don't think this function is running; It isn't
-    //     console.log(req.body)
-    //     dbConn.then(function(db) {
-    //         delete req.body._id; // for safety reasons
-    //         console.log(req.body.email)
-    //         db.collection('quotesMania.quotesUsers').insertOne(req.body);
-    //     });    
-    //     res.send('Data received:\n' + JSON.stringify(req.body));
-    // });
+      // Store into DB
+      app.get('/pages/', function (req, res) {
+        // I don't think this function is running; It isn't
+        console.log(req.body)
+        dbConn.then(function(db) {
+            delete req.body._id; // for safety reasons
+            console.log(req.body.email)
+            db.collection('quotesMania.quotesUsers').insertOne(req.body);
+        });    
+        res.send('Data received:\n' + JSON.stringify(req.body));
+    });
 
   } catch (e) {
       console.error(e);
