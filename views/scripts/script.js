@@ -2,10 +2,6 @@
 
 function validateEmail(){
     // Add email to database
-    
-
-
-
 
     // //Check if email addresses box are null
     // if (val1== null && val2==null){
